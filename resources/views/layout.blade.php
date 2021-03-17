@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Notas</title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css')}}">
-   
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+    <!-- <script type="text/javascript" src="{{ asset('js/script.js') }}"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -15,13 +15,13 @@
             <nav class="main-nav">
                 <ul class="main-nav-list">
                     <li class="main-nav-item active">
-                        <a href="{{ route('notas.index') }}" class="main-nav-link">
+                        <a href="/notas" class="main-nav-link">
                             <i class="icon icon-th-list"></i>
                             <span>Ver notas</span>
                         </a>
                     </li>
                     <li class="main-nav-item ">
-                        <a href="{{ url('agregar') }}" class="main-nav-link">
+                        <a href="/agregar" class="main-nav-link">
                             <i class="icon icon-pen"></i>
                             <span>Nueva nota</span>
                         </a>
@@ -30,26 +30,14 @@
             </nav>
         </header>
 
-
         @yield('content')
 
 
-        <footer class="card-footer">
-                        <a class="action-link action-edit">
-                            <i class="icon icon-pen"></i>
-                        </a>
-                        <a class="action-link action-delete">
-                            <i class="icon icon-trash"></i>
-                        </a>
-                    </footer>
-                </div>
-            </div>
-        </main>
         <footer class="foot">
             <div class="ad">
                 <p>
                     Esta aplicación es desarrollada en el cursos de IPM
-                    <a href="https://twitch.tv/drinkz">Primeros pasos con Laravel </a>.
+                    <a href="https://mawe.mx">Primeros pasos con Laravel </a>.
                 </p>
             </div>
             <div class="license">
